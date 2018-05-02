@@ -21,6 +21,7 @@ func main() {
 	   FYI
 	   gin.context doesn't work onwith ipv6
 	*/
+	gin.SetMode(gin.ReleaseMode)
 
 	port := "8080"
 	iface := os.Getenv("INTERFACE")
