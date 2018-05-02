@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/sethdmoore/ipme/Godeps/_workspace/src/github.com/gin-gonic/gin"
+	"github.com/gin-gonic/gin"
 	"os"
 	"strings"
 )
