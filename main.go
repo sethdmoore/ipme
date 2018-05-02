@@ -10,7 +10,6 @@ func strip_port() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		ip := strings.Split(c.ClientIP(), ":")[0]
 		//fmt.Println(strings.Split(ip_port, ":")[0])
-		fmt.Println(ip)
 		c.String(200, ip)
 	}
 }
@@ -35,6 +34,5 @@ func main() {
 		port = port_env
 	}
 
-	fmt.Println(port)
 	r.Run(iface + ":" + port)
 }
